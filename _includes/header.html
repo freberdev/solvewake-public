@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="{% if page.lang == 'sv' %}{{ '/sv/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
+      <img src="{{ '/assets/icon.png' | relative_url }}" alt="">SolveWake
+    </a>
+    <nav class="site-nav">
+      {% if page.lang == 'sv' %}
+        <a href="{{ '/sv/privacy/' | relative_url }}"{% if page.url == '/sv/privacy/' %} aria-current="page"{% endif %}>Integritet</a>
+        <a href="{{ '/sv/support/' | relative_url }}"{% if page.url == '/sv/support/' %} aria-current="page"{% endif %}>Support</a>
+      {% else %}
+        <a href="{{ '/privacy/' | relative_url }}"{% if page.url == '/privacy/' %} aria-current="page"{% endif %}>Privacy</a>
+        <a href="{{ '/support/' | relative_url }}"{% if page.url == '/support/' %} aria-current="page"{% endif %}>Support</a>
+      {% endif %}
+      {% if page.alt %}<a href="{{ page.alt | relative_url }}" lang="{% if page.lang == 'sv' %}en{% else %}sv{% endif %}">{% if page.lang == 'sv' %}English{% else %}Svenska{% endif %}</a>{% endif %}
+    </nav>
+  </div>
+</header>

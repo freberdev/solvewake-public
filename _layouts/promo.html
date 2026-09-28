@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  {% include head.html %}
+</head>
+<body class="promo">
+  {% assign shot = '/assets/screens/' | append: page.shots | append: '-' %}
+  <div class="wrap wide">
+    {% include header.html %}
+  </div>
+  <main>
+    <section class="hero wrap wide">
+      <div>
+        <p class="equation" aria-hidden="true">47 + 38 = <span class="answer">85</span></p>
+        <h1>{{ page.hero.title }}</h1>
+        <p class="lede">{{ page.hero.lede }}</p>
+        <p class="soon">{{ page.soon }}</p>
+      </div>
+      <figure class="phone">
+        <img src="{{ shot | append: 'solve.jpg' | relative_url }}" alt="{{ page.hero.image_alt }}" width="717" height="1560">
+      </figure>
+    </section>
+
+    <section class="section wrap wide" aria-labelledby="steps-title">
+      <h2 id="steps-title">{{ page.steps.title }}</h2>
+      <ol class="timeline">
+        {% for step in page.steps.items %}
+        <li>
+          <time>{{ step.time }}</time>
+          <div>
+            <h3>{{ step.title }}</h3>
+            <p>{{ step.text }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </section>
+
+    <section class="section wrap wide" aria-labelledby="features-title">
+      <h2 id="features-title">{{ page.features.title }}</h2>
+      <div class="features">
+        {% for feature in page.features.items %}
+        <div>
+          <h3>{{ feature.title }}</h3>
+          <p>{{ feature.text }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="section wrap wide" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">{{ page.gallery.title }}</h2>
+      <ul class="shots">
+        {% for item in page.gallery.items %}
+        <li>
+          <figure>
+            <div class="phone"><img src="{{ shot | append: item.image | append: '.jpg' | relative_url }}" alt="{{ item.alt }}" width="717" height="1560" loading="lazy"></div>
+            <figcaption>{{ item.caption }}</figcaption>
+          </figure>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <svg class="horizon" viewBox="0 0 1200 150" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+      <circle cx="600" cy="150" r="58" fill="#FF9F45"/>
+      <g stroke="#FF9F45" stroke-width="9" stroke-linecap="round">
+        <line x1="532" y1="111" x2="510" y2="98"/>
+        <line x1="561" y1="82" x2="548" y2="60"/>
+        <line x1="600" y1="72" x2="600" y2="46"/>
+        <line x1="639" y1="82" x2="652" y2="60"/>
+        <line x1="668" y1="111" x2="690" y2="98"/>
+      </g>
+    </svg>
+
+    <section class="morning-section" aria-labelledby="morning-title">
+      <div class="wrap wide morning-grid">
+        <div>
+          <h2 id="morning-title">{{ page.morning.title }}</h2>
+          <p>{{ page.morning.text }}</p>
+          <ul>
+            {% for point in page.morning.points %}<li>{{ point }}</li>{% endfor %}
+          </ul>
+          <p class="soon">{{ page.soon }}</p>
+          <div class="morning-links">
+            <a href="{{ page.morning.support_url | relative_url }}">{{ page.morning.support }}</a>
+            <a href="{{ page.morning.privacy_url | relative_url }}">{{ page.morning.privacy }}</a>
+          </div>
+        </div>
+        <figure class="phone">
+          <img src="{{ shot | append: 'morning.jpg' | relative_url }}" alt="{{ page.morning.image_alt }}" width="717" height="1560" loading="lazy">
+        </figure>
+      </div>
+    </section>
+  </main>
+  <div class="promo-footer">
+    <div class="wrap wide">
+      {% include footer.html %}
+    </div>
+  </div>
+</body>
+</html>
