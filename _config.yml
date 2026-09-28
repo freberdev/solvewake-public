@@ -1,0 +1,9 @@
+title: SolveWake
+description: The alarm clock that stops when you've solved the math.
+url: https://freberdev.github.io
+baseurl: /solvewake-public
+markdown: kramdown
+kramdown:
+  input: GFM
+exclude:
+  - README.md
