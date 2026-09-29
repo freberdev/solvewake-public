@@ -14,7 +14,7 @@
         <p class="equation" aria-hidden="true">47 + 38 = <span class="answer"><span>8</span><span>5</span></span></p>
         <h1>{{ page.hero.title }}</h1>
         <p class="lede">{{ page.hero.lede }}</p>
-        <p class="soon">{{ page.soon }}</p>
+        {% include app-store-badge.html %}
       </div>
       <figure class="phone">
         <img src="{{ shot | append: 'solve.jpg' | relative_url }}" alt="{{ page.hero.image_alt }}" width="717" height="1560">
@@ -81,7 +81,7 @@
           <ul>
             {% for point in page.morning.points %}<li>{{ point }}</li>{% endfor %}
           </ul>
-          <p class="soon">{{ page.soon }}</p>
+          {% include app-store-badge.html %}
           <div class="morning-links">
             <a href="{{ page.morning.support_url | relative_url }}">{{ page.morning.support }}</a>
             <a href="{{ page.morning.privacy_url | relative_url }}">{{ page.morning.privacy }}</a>

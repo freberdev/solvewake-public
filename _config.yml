@@ -1,6 +1,8 @@
 title: SolveWake
 description: The alarm clock that stops when you've solved the math.
 url: https://freberdev.github.io
+app_store_id: 6816840658
+app_store_url: https://apps.apple.com/app/id6816840658
 baseurl: /solvewake-public
 markdown: kramdown
 kramdown:

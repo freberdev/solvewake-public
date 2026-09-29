@@ -6,7 +6,9 @@ permalink: /
 alt: /sv/
 shots: en
 description: SolveWake is an alarm clock for iPhone. Solve a few quick math problems to turn it off, or it rings again a minute later.
-soon: Coming soon to the App Store
+app_store:
+  label: Download on the App Store
+  badge: en-us
 hero:
   title: The alarm stops when you've solved the math.
   lede: A few quick problems wake your brain before you can fall back asleep. Press Stop without solving them and it rings again a minute later.

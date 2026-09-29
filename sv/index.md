@@ -6,7 +6,9 @@ permalink: /sv/
 alt: /
 shots: sv
 description: SolveWake är en väckarklocka för iPhone. Lös några snabba mattetal för att stänga av den, annars ringer den igen en minut senare.
-soon: Snart på App Store
+app_store:
+  label: Hämta i App Store
+  badge: sv-se
 hero:
   title: Alarmet stängs av först när du löst talen.
   lede: Några snabba tal väcker hjärnan innan du hinner somna om. Trycker du på Stopp utan att lösa dem ringer det igen en minut senare.

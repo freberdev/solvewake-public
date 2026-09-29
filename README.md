@@ -16,4 +16,4 @@ The public website for the SolveWake iPhone app, published with GitHub Pages:
 - `assets/css/site.css`: the Dawn colours and all styles.
 - `assets/screens/`: app screenshots in English (`en-*`) and Swedish (`sv-*`).
 
-When the app is live on the App Store, replace the "Coming soon to the App Store" label (`soon` in the front matter) with Apple's official App Store badge and link.
+The App Store link lives in `_config.yml` (`app_store_url`, `app_store_id`). The home pages show Apple's official App Store badge in two places (`_includes/app-store-badge.html`, text and badge language in `app_store` in the front matter), and every page has Apple's Smart App Banner tag for Safari on iPhone.

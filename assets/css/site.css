@@ -72,7 +72,8 @@ body.promo {
 .equation .answer { color: var(--dawn); }
 .hero h1 { font-size: clamp(30px, 3.6vw, 44px); font-weight: 300; line-height: 1.15; letter-spacing: -0.4px; margin: 0 0 16px; max-width: 18ch; }
 .lede { font-size: 19px; color: var(--muted); margin: 0 0 28px; max-width: 34ch; }
-.soon { display: inline-block; margin: 0; padding: 10px 18px; border-radius: 999px; background: var(--ember); color: var(--paper); font-size: 15px; font-weight: 600; }
+.app-store { display: inline-block; line-height: 0; border-radius: 10px; }
+.app-store img { display: block; height: 54px; width: auto; }
 
 .phone {
   margin: 0; justify-self: center; width: min(340px, 100%);
@@ -117,7 +118,6 @@ body.promo {
 .morning-section ul { list-style: none; padding: 0; margin: 24px 0 28px; display: grid; gap: 10px; }
 .morning-section li { padding-left: 26px; position: relative; color: var(--ink); }
 .morning-section li::before { content: ""; position: absolute; left: 0; top: 0.72em; width: 12px; height: 2px; background: var(--dawn-deep); }
-.morning-section .soon { background: var(--ink); color: var(--morning); }
 .morning-section .phone { box-shadow: none; width: min(300px, 100%); }
 .morning-links { margin-top: 28px; font-size: 15px; display: flex; gap: 20px; }
 .morning-links a { color: var(--clay); }
